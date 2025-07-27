@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: class-service
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/class-service
+    username: babaGM
+    password: GalsenMedic123!
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+    show_sql: true 
+server:
+  port: 8088
+springdoc:
+  api-docs:
+    path: /api-docs 
